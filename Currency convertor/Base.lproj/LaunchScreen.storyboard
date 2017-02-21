@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,14 +18,54 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N4h-Gl-nVz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="currency-512" translatesAutoresizingMaskIntoConstraints="NO" id="6cO-Pr-fEI">
+                                        <rect key="frame" x="60" y="120" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="5Lk-Ru-pMk"/>
+                                            <constraint firstAttribute="width" constant="200" id="uED-gl-73Q"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency convector" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9U-CT-oHj">
+                                        <rect key="frame" x="10" y="362" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="aCt-B6-gl5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="29"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.38550663569999999" green="0.7188613895" blue="0.90703299100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="6cO-Pr-fEI" firstAttribute="centerX" secondItem="N4h-Gl-nVz" secondAttribute="centerX" id="2Uc-ab-gKx"/>
+                                    <constraint firstItem="k9U-CT-oHj" firstAttribute="leading" secondItem="N4h-Gl-nVz" secondAttribute="leading" constant="10" id="BNw-b1-2Cu"/>
+                                    <constraint firstItem="6cO-Pr-fEI" firstAttribute="centerY" secondItem="N4h-Gl-nVz" secondAttribute="centerY" constant="-20" id="IZV-5O-VWh"/>
+                                    <constraint firstAttribute="trailing" secondItem="k9U-CT-oHj" secondAttribute="trailing" constant="10" id="r2P-Dy-o1J"/>
+                                    <constraint firstItem="k9U-CT-oHj" firstAttribute="top" secondItem="6cO-Pr-fEI" secondAttribute="bottom" constant="42" id="tYy-0S-Va1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="N4h-Gl-nVz" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="32h-Sx-Ppf"/>
+                            <constraint firstAttribute="trailing" secondItem="N4h-Gl-nVz" secondAttribute="trailing" id="DOm-Lp-Hna"/>
+                            <constraint firstItem="N4h-Gl-nVz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="fas-ZT-ftm"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="N4h-Gl-nVz" secondAttribute="bottom" id="wnm-Hh-TWH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="50.724637681159422" y="374.18478260869568"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="currency-512" width="512" height="512"/>
+    </resources>
 </document>
